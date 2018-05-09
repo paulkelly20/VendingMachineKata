@@ -62,4 +62,6 @@ public class CoinSlot {
         return total;
     }
 
+
+
 }

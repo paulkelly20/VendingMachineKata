@@ -35,5 +35,7 @@ public class PositionTest {
         position.dispenseProduct();
         assertEquals(2, position.getStockLevel());
     }
+
+
 }
 

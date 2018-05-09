@@ -20,4 +20,8 @@ public class KeyPad {
     public int getNumberOfButtons() {
         return this.buttons.size();
     }
+
+    public String displayCurrentBalance(CoinSlot coinSlot) {
+        return String.format("%.2f", coinSlot.getCurrentBalance());
+    }
 }
