@@ -2,6 +2,8 @@ import coins.Coin;
 import coins.CoinType;
 import machine.CoinSlot;
 import machine.KeyPad;
+import machine.Position;
+import machine.Selection;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -25,6 +27,12 @@ public class KeyPadTest {
         CoinSlot coinSlot = new CoinSlot();
         Coin coin = new Coin(CoinType.FIFTYPENCE);
         coinSlot.addCoin(coin);
-        assertEquals("0.50", keypad.displayCurrentBalance(coinSlot));
+        assertEquals("The balance is 0.50", keypad.displayCurrentBalance(coinSlot));
+    }
+
+    @Test
+    public void canDisplayPrice() {
+        Position position = new Position(0.50, Selection.A1);
+        assertEquals("The price is 0.50", keypad.displayPrice(position));
     }
 }
