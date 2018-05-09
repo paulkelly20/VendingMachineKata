@@ -16,6 +16,4 @@ public class KeyPadTest {
     public void has16Buttons() {
         assertEquals(16, keypad.getNumberOfButtons());
     }
-
-    
 }
