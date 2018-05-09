@@ -14,4 +14,8 @@ public class CoinSlot {
     public int countNumberOfCoins() {
         return this.coins.size();
     }
+
+    public void addCoin(Coin coin) {
+        this.coins.add(coin);
+    }
 }

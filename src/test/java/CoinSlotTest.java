@@ -22,4 +22,10 @@ public class CoinSlotTest {
     public void hasEmptyArray() {
         assertEquals(0, coinSlot.countNumberOfCoins());
     }
+
+    @Test
+    public void canAddCoin() {
+        coinSlot.addCoin(onePound);
+        assertEquals(1, coinSlot.countNumberOfCoins());
+    }
 }
