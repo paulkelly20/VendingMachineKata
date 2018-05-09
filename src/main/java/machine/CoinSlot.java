@@ -5,15 +5,16 @@ import coins.CoinType;
 
 import java.util.ArrayList;
 
-public class CoinSlot implements CountMoney, CountBalance{
+public class CoinSlot extends TillFunction{
+
     private ArrayList<Coin> coins;
 
     public CoinSlot() {
-        coins = new ArrayList<>();
+        this.coins = new ArrayList<>();
     }
 
     public int countNumberOfCoins() {
-        return this.coins.size();
+        return coins.size();
     }
 
     public Coin addCoin(Coin coin) {
@@ -24,41 +25,10 @@ public class CoinSlot implements CountMoney, CountBalance{
         return coin;
     }
 
-    public double getCoinValue(Coin coin){
-        if (coin.getWeightFromEnum() == CoinType.FIVEPENCE.getWeight() && coin.getCoinDiameter() == CoinType.FIVEPENCE.getDiameter()){
-            return 0.05;
-        }
-
-        if (coin.getWeightFromEnum() == CoinType.TENPENCE.getWeight() && coin.getCoinDiameter() == CoinType.TENPENCE.getDiameter()){
-            return 0.10;
-        }
-
-        if (coin.getWeightFromEnum() == CoinType.TWENTYPENCE.getWeight() && coin.getCoinDiameter() == CoinType.TWENTYPENCE.getDiameter()){
-            return 0.20;
-        }
-
-        if (coin.getWeightFromEnum() == CoinType.FIFTYPENCE.getWeight() && coin.getCoinDiameter() == CoinType.FIFTYPENCE.getDiameter()){
-            return 0.50;
-        }
-
-        if (coin.getWeightFromEnum() == CoinType.ONEPOUND.getWeight() && coin.getCoinDiameter() == CoinType.ONEPOUND.getDiameter()){
-            return 1.00;
-        }
-
-        if (coin.getWeightFromEnum() == CoinType.TWOPOUND.getWeight() && coin.getCoinDiameter() == CoinType.TWOPOUND.getDiameter()){
-            return 2.00;
-        }
-
-        return 0;
+    public ArrayList<Coin> getCoins() {
+        ArrayList<Coin> clone = new ArrayList<>(coins);
+        return clone;
     }
 
-    public double getCurrentBalance() {
-        double total = 0;
 
-        for (Coin coin : this.coins){
-            total += getCoinValue(coin);
-        }
-
-        return total;
-    }
 }

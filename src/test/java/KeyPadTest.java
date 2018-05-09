@@ -24,8 +24,9 @@ public class KeyPadTest {
 
     @Test
     public void canDisplayCurrentBalance() {
-        CoinSlot coinSlot = new CoinSlot();
         Coin coin = new Coin(CoinType.FIFTYPENCE);
+        CoinSlot coinSlot = new CoinSlot();
+
         coinSlot.addCoin(coin);
         assertEquals("The balance is 0.50", keypad.displayCurrentBalance(coinSlot));
     }

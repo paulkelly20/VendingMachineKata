@@ -7,18 +7,31 @@ import products.Sweet;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class VendingMachine implements CountMoney, CountBalance{
+public class VendingMachine extends TillFunction{
     private CoinSlot coinSlot;
     private ArrayList<Position> positions;
     private KeyPad keyPad;
     private ArrayList<Coin> coins;
 
-    public VendingMachine(CoinSlot coinSlot, KeyPad keyPad, ArrayList<Coin> coins) {
+
+
+    public VendingMachine( CoinSlot coinSlot, KeyPad keyPad) {
         this.coinSlot = coinSlot;
         this.positions = new ArrayList<>();
         this.keyPad = keyPad;
-        this.coins = coins;
+        this.coins = new ArrayList<>();
         generatePositions();
+        generateFloat();
+
+    }
+
+    public ArrayList<Coin> getCoins() {
+        ArrayList<Coin> clone = new ArrayList<>(coins);
+        return clone;
+    }
+
+    public int countNumberOfCoins() {
+        return coins.size();
     }
 
     private void generatePositions() {
@@ -28,45 +41,23 @@ public class VendingMachine implements CountMoney, CountBalance{
         }
     }
 
-    public double getCurrentBalance() {
-        double total = 0;
 
-        for (Coin coin : this.coins){
-            total += getCoinValue(coin);
+    private void generateFloat(){
+        ArrayList<Coin> floatcoins = new ArrayList<>();
+
+        for (int i = 0; i < 5; i++){
+            floatcoins.add(new Coin(CoinType.ONEPOUND));
+            floatcoins.add(new Coin(CoinType.TWOPOUND));
         }
 
-        return total;
-    }
+        coins.addAll(floatcoins);
 
-    public double getCoinValue(Coin coin){
-        if (coin.getWeightFromEnum() == CoinType.FIVEPENCE.getWeight() && coin.getCoinDiameter() == CoinType.FIVEPENCE.getDiameter()){
-            return 0.05;
-        }
-
-        if (coin.getWeightFromEnum() == CoinType.TENPENCE.getWeight() && coin.getCoinDiameter() == CoinType.TENPENCE.getDiameter()){
-            return 0.10;
-        }
-
-        if (coin.getWeightFromEnum() == CoinType.TWENTYPENCE.getWeight() && coin.getCoinDiameter() == CoinType.TWENTYPENCE.getDiameter()){
-            return 0.20;
-        }
-
-        if (coin.getWeightFromEnum() == CoinType.FIFTYPENCE.getWeight() && coin.getCoinDiameter() == CoinType.FIFTYPENCE.getDiameter()){
-            return 0.50;
-        }
-
-        if (coin.getWeightFromEnum() == CoinType.ONEPOUND.getWeight() && coin.getCoinDiameter() == CoinType.ONEPOUND.getDiameter()){
-            return 1.00;
-        }
-
-        if (coin.getWeightFromEnum() == CoinType.TWOPOUND.getWeight() && coin.getCoinDiameter() == CoinType.TWOPOUND.getDiameter()){
-            return 2.00;
-        }
-
-        return 0;
     }
 
     public int getNumberOfPositions() {
         return this.positions.size();
     }
+
+
+
 }

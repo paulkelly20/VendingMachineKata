@@ -16,19 +16,16 @@ public class VendingMachineTest {
     CoinSlot coinSlot;
     KeyPad keyPad;
     Sweet sweet;
-    ArrayList<Coin> coins;
+
+    Coin onePound;
+
 
     @Before
     public void setUp() throws Exception {
         keyPad = new KeyPad();
         coinSlot = new CoinSlot();
-        coins = new ArrayList<>();
-        for (int i = 0; i < 5; i++){
-           coins.add(new Coin(CoinType.ONEPOUND));
-           coins.add(new Coin(CoinType.TWOPOUND));
-        }
-
-        vendingMachine = new VendingMachine(coinSlot, keyPad, coins);
+        onePound = new Coin(CoinType.ONEPOUND);
+        vendingMachine = new VendingMachine(coinSlot, keyPad);
     }
 
     @Test
@@ -37,7 +34,13 @@ public class VendingMachineTest {
     }
 
     @Test
-    public void hasFifteenQuid() {
-        assertEquals(15.0, vendingMachine.getCurrentBalance(), 0.1);
+    public void testNumberOfCoinsInmachine() {
+        assertEquals(10, vendingMachine.countNumberOfCoins());
     }
+
+    @Test
+    public void hasFifteenQuid() {
+        assertEquals(15.0, vendingMachine.getCurrentBalance(vendingMachine.getCoins()), 0.1);
+    }
+
 }
