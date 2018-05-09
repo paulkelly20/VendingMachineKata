@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3cc9b15-15f7-454d-913b-34cd689eeb45" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/coins/CoinType.java" afterPath="$PROJECT_DIR$/src/main/java/coins/CoinType.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/machine/CoinSlot.java" afterPath="$PROJECT_DIR$/src/main/java/machine/CoinSlot.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CoinSlotTest.java" afterPath="$PROJECT_DIR$/src/test/java/CoinSlotTest.java" />
-    </list>
+    <list default="true" id="b3cc9b15-15f7-454d-913b-34cd689eeb45" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -24,20 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SweetTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/SweetTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CoinType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/coins/CoinType.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoinSlotTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CoinSlotTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CoinSlotTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
@@ -100,6 +81,34 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#493#494#0" expanded="true" />
                 <element signature="e#555#556#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Position.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/machine/Position.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PositionTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PositionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,33 +125,6 @@
                 <element signature="e#213#214#0" expanded="true" />
                 <element signature="e#252#253#0" expanded="true" />
                 <element signature="e#292#293#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KeyPad.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/machine/KeyPad.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="e#442#443#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Button.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/machine/Button.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-              <folding>
-                <element signature="e#113#114#0" expanded="true" />
-                <element signature="e#155#156#0" expanded="true" />
-                <element signature="e#226#227#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -491,6 +473,8 @@
         <option value="$PROJECT_DIR$/src/main/java/machine/CoinSlot.java" />
         <option value="$PROJECT_DIR$/src/main/java/coins/CoinType.java" />
         <option value="$PROJECT_DIR$/src/test/java/CoinSlotTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/machine/Position.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PositionTest.java" />
       </list>
     </option>
   </component>
@@ -618,7 +602,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CoinSlotTest.cannotAcceptInvalidCoin">
+  <component name="RunManager" selected="JUnit.PositionTest.stockLevelStartsAt0">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -719,14 +703,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="CoinSlotTest.hasEmptyArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PositionTest.stockLevelStartsAt0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="VendingMachine_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CoinSlotTest" />
-      <option name="METHOD_NAME" value="hasEmptyArray" />
+      <option name="MAIN_CLASS_NAME" value="PositionTest" />
+      <option name="METHOD_NAME" value="stockLevelStartsAt0" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -800,19 +784,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.hasEmptyArray" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canAddCoin" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canCalculateSingleCoinValue" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.cannotAcceptInvalidCoin" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canAddCoin" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canCalculateSingleCoinValue" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.cannotAcceptInvalidCoin" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PositionTest.stockLevelStartsAt0" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.cannotAcceptInvalidCoin" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canCalculateSingleCoinValue" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canAddCoin" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.hasEmptyArray" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PositionTest.stockLevelStartsAt0" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.cannotAcceptInvalidCoin" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canCalculateSingleCoinValue" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canAddCoin" />
       </list>
     </recent_temporary>
   </component>
@@ -833,9 +817,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CoinSlotTest_canAddCoin - 2018.05.09 at 14h 35m 10s.xml">
-      <configuration name="CoinSlotTest.canAddCoin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CoinSlotTest_canCalculateSingleCoinValue - 2018.05.09 at 14h 55m 53s.xml">
       <configuration name="CoinSlotTest.canCalculateSingleCoinValue" configurationId="JUnit" />
     </history-entry>
@@ -863,6 +844,9 @@
     <history-entry file="CoinSlotTest_coinSlotCanCalculateMultipleCoinsValue - 2018.05.09 at 15h 01m 30s.xml">
       <configuration name="CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PositionTest_stockLevelStartsAt0 - 2018.05.09 at 15h 18m 17s.xml">
+      <configuration name="PositionTest.stockLevelStartsAt0" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="0" width="1280" height="800" extended-state="0" />
@@ -881,7 +865,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26547456" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15912762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21647818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2778542" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1006,18 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/KeyPadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/coins/Coin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -1042,9 +1014,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/coins/CoinType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CoinSlotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="49" column="5" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/KeyPadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/machine/KeyPad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="391">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="e#442#443#0" expanded="true" />
@@ -1067,27 +1076,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/coins/CoinType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/machine/Position.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="195">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CoinSlotTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/PositionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="49" column="5" lean-forward="false" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        <state relative-caret-position="279">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
           </folding>
         </state>
       </provider>
