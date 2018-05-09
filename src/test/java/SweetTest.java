@@ -22,4 +22,6 @@ public class SweetTest {
         sweet.setPrice(2.00);
         assertEquals(2.00, sweet.getPrice(), 0.1);
     }
+
+
 }
