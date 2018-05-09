@@ -17,4 +17,7 @@ public class ButtonTest {
     public void hasASelectionEnum() {
         assertEquals(Selection.A1, button.getSelection());
     }
+
+
+
 }
