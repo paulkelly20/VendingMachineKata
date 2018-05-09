@@ -5,7 +5,7 @@ import coins.CoinType;
 
 import java.util.ArrayList;
 
-public class CoinSlot {
+public class CoinSlot implements CountMoney, CountBalance{
     private ArrayList<Coin> coins;
 
     public CoinSlot() {
@@ -61,7 +61,4 @@ public class CoinSlot {
 
         return total;
     }
-
-
-
 }

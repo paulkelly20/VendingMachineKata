@@ -36,8 +36,8 @@ public class VendingMachineTest {
         assertEquals(16, vendingMachine.getNumberOfPositions());
     }
 
-//    @Test
-//    public void hasFifteenQuid() {
-//        assertEquals(15.0, vendingMachine.getFloat(), 0.1);
-//    }
+    @Test
+    public void hasFifteenQuid() {
+        assertEquals(15.0, vendingMachine.getCurrentBalance(), 0.1);
+    }
 }
