@@ -19,4 +19,8 @@ public enum CoinType {
     public double getWeight() {
         return weight;
     }
+
+    public double getDiameter() {
+        return diameter;
+    }
 }

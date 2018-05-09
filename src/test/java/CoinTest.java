@@ -18,6 +18,6 @@ public class CoinTest {
         assertEquals(9.5, coin.getWeightFromEnum(), 0.1);
     }
 
-    
+
 
 }

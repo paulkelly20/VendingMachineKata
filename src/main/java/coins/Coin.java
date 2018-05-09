@@ -10,4 +10,8 @@ public class Coin {
     public double getWeightFromEnum() {
         return coinType.getWeight();
     }
+
+    public double getCoinDiameter() {
+        return coinType.getDiameter();
+    }
 }
