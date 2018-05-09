@@ -2,6 +2,7 @@ import machine.Position;
 import machine.Selection;
 import org.junit.Before;
 import org.junit.Test;
+import products.Sweet;
 
 import static org.junit.Assert.assertEquals;
 
@@ -16,6 +17,13 @@ public class PositionTest {
     @Test
     public void stockLevelStartsAt0() {
         assertEquals(0, position.getStockLevel());
+    }
+
+    @Test
+    public void canAddProduct() {
+        Sweet sweet = new Sweet("Mars Bar", 0.50);
+        position.addStock(sweet);
+        assertEquals(1, position.getStockLevel());
     }
 
     
