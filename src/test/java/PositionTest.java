@@ -26,6 +26,14 @@ public class PositionTest {
         assertEquals(1, position.getStockLevel());
     }
 
-    
+    @Test
+    public void canDispenseProduct() {
+        Sweet sweet = new Sweet("Mars Bar", 0.50);
+        position.addStock(sweet);
+        position.addStock(sweet);
+        position.addStock(sweet);
+        position.dispenseProduct();
+        assertEquals(2, position.getStockLevel());
+    }
 }
 
