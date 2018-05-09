@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b3cc9b15-15f7-454d-913b-34cd689eeb45" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SweetTest.java" afterPath="$PROJECT_DIR$/src/test/java/SweetTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -25,8 +25,8 @@
       <file leaf-file-name="SweetTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/SweetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="314">
+              <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#307#308#0" expanded="true" />
@@ -372,10 +372,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/java/SweetTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Sweet.java" />
         <option value="$PROJECT_DIR$/src/main/java/products/Product.java" />
         <option value="$PROJECT_DIR$/src/main/java/products/Sweet.java" />
+        <option value="$PROJECT_DIR$/src/test/java/SweetTest.java" />
       </list>
     </option>
   </component>
@@ -484,7 +484,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SweetTest.canSetPrice">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -504,6 +504,26 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="SweetTest.canSetPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="VendingMachine_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SweetTest" />
+      <option name="METHOD_NAME" value="canSetPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="SweetTest.hasName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -585,9 +605,14 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SweetTest.hasName" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SweetTest.canSetPrice" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SweetTest.hasName" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SweetTest.canSetPrice" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SweetTest.hasName" />
       </list>
     </recent_temporary>
   </component>
@@ -608,6 +633,9 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="SweetTest_canSetPrice - 2018.05.09 at 13h 17m 13s.xml">
+      <configuration name="SweetTest.canSetPrice" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="SweetTest_hasName - 2018.05.09 at 13h 15m 20s.xml">
       <configuration name="SweetTest.hasName" configurationId="JUnit" />
     </history-entry>
@@ -706,8 +734,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/SweetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="314">
+          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#307#308#0" expanded="true" />

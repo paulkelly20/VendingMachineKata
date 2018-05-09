@@ -17,8 +17,9 @@ public class SweetTest {
         assertEquals("Percy Pigs", sweet.getName());
     }
 
-//    @Test
-//    public void hasPrice() {
-//        assertEquals();
-//    }
+    @Test
+    public void canSetPrice() {
+        sweet.setPrice(2.00);
+        assertEquals(2.00, sweet.getPrice(), 0.1);
+    }
 }
