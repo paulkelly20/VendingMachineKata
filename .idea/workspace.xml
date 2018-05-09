@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3cc9b15-15f7-454d-913b-34cd689eeb45" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/coins/Coin.java" afterPath="$PROJECT_DIR$/src/main/java/coins/Coin.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/machine/CoinSlot.java" afterPath="$PROJECT_DIR$/src/main/java/machine/CoinSlot.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CoinSlotTest.java" afterPath="$PROJECT_DIR$/src/test/java/CoinSlotTest.java" />
     </list>
@@ -90,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoinSlotTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CoinSlotTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CoinSlotTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            <state relative-caret-position="268">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#493#494#0" expanded="true" />
@@ -104,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoinSlot.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CoinSlot.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/machine/CoinSlot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="57" column="15" lean-forward="false" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+            <state relative-caret-position="274">
+              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#172#173#0" expanded="true" />
@@ -490,8 +489,8 @@
         <option value="$PROJECT_DIR$/src/test/java/KeyPadTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/CoinSlot.java" />
         <option value="$PROJECT_DIR$/src/main/java/coins/Coin.java" />
-        <option value="$PROJECT_DIR$/src/main/java/machine/CoinSlot.java" />
         <option value="$PROJECT_DIR$/src/test/java/CoinSlotTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/machine/CoinSlot.java" />
       </list>
     </option>
   </component>
@@ -619,7 +618,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CoinSlotTest.canCalculateSingleCoinValue">
+  <component name="RunManager" selected="JUnit.CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -639,26 +638,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="ButtonTest.hasASelectionEnum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="VendingMachine_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ButtonTest" />
-      <option name="METHOD_NAME" value="hasASelectionEnum" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration name="CoinSlotTest.canAddCoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -688,6 +667,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CoinSlotTest" />
       <option name="METHOD_NAME" value="canCalculateSingleCoinValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="VendingMachine_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CoinSlotTest" />
+      <option name="METHOD_NAME" value="coinSlotCanCalculateMultipleCoinsValue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -801,19 +800,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ButtonTest.hasASelectionEnum" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.KeyPadTest.has16Buttons" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.hasEmptyArray" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canAddCoin" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canCalculateSingleCoinValue" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.KeyPadTest.has16Buttons" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.hasEmptyArray" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canAddCoin" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canCalculateSingleCoinValue" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canCalculateSingleCoinValue" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canAddCoin" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.hasEmptyArray" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.KeyPadTest.has16Buttons" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ButtonTest.hasASelectionEnum" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canCalculateSingleCoinValue" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.canAddCoin" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CoinSlotTest.hasEmptyArray" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.KeyPadTest.has16Buttons" />
       </list>
     </recent_temporary>
   </component>
@@ -834,15 +833,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_VendingMachine_test - 2018.05.09 at 13h 52m 19s.xml">
-      <configuration name="All in VendingMachine_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ButtonTest_hasASelectionEnum - 2018.05.09 at 13h 51m 03s.xml">
-      <configuration name="ButtonTest.hasASelectionEnum" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ButtonTest_hasASelectionEnum - 2018.05.09 at 14h 20m 21s.xml">
-      <configuration name="ButtonTest.hasASelectionEnum" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CoinSlotTest_canAddCoin - 2018.05.09 at 14h 35m 10s.xml">
       <configuration name="CoinSlotTest.canAddCoin" configurationId="JUnit" />
     </history-entry>
@@ -855,11 +845,20 @@
     <history-entry file="CoinSlotTest_canCalculateSingleCoinValue - 2018.05.09 at 14h 56m 16s.xml">
       <configuration name="CoinSlotTest.canCalculateSingleCoinValue" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CoinSlotTest_coinSlotCanCalculateMultipleCoinsValue - 2018.05.09 at 14h 59m 42s.xml">
+      <configuration name="CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoinSlotTest_coinSlotCanCalculateMultipleCoinsValue - 2018.05.09 at 15h 00m 21s.xml">
+      <configuration name="CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoinSlotTest_coinSlotCanCalculateMultipleCoinsValue - 2018.05.09 at 15h 00m 22s.xml">
+      <configuration name="CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CoinSlotTest_coinSlotCanCalculateMultipleCoinsValue - 2018.05.09 at 15h 00m 25s.xml">
+      <configuration name="CoinSlotTest.coinSlotCanCalculateMultipleCoinsValue" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="CoinSlotTest_hasEmptyArray - 2018.05.09 at 14h 33m 09s.xml">
       <configuration name="CoinSlotTest.hasEmptyArray" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CoinTest_canGetWeightFromEnum - 2018.05.09 at 13h 29m 23s.xml">
-      <configuration name="CoinTest.canGetWeightFromEnum" configurationId="JUnit" />
     </history-entry>
     <history-entry file="KeyPadTest_has16Buttons - 2018.05.09 at 14h 27m 48s.xml">
       <configuration name="KeyPadTest.has16Buttons" configurationId="JUnit" />
@@ -890,7 +889,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889959" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1067,10 +1066,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CoinSlotTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/machine/CoinSlot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="57" column="15" lean-forward="false" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+        <state relative-caret-position="274">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#172#173#0" expanded="true" />
@@ -1079,18 +1090,6 @@
             <element signature="e#292#293#0" expanded="true" />
             <element signature="e#330#331#0" expanded="true" />
             <element signature="e#366#367#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CoinSlotTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
           </folding>
         </state>
       </provider>

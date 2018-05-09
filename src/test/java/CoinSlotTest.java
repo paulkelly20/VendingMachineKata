@@ -35,9 +35,10 @@ public class CoinSlotTest {
         assertEquals(0.50, coinSlot.getCoinValue(fiftyPence), 0.1);
     }
 
-//    @Test
-//    public void coinSlotCanCalculateMultipleCoinsValue() {
-//        coinSlot.addCoin(onePound);
-//        assertEquals(1.0, coinSlot.coinValue(), 0.1);
-//    }
+    @Test
+    public void coinSlotCanCalculateMultipleCoinsValue() {
+        coinSlot.addCoin(onePound);
+        coinSlot.addCoin(fiftyPence);
+        assertEquals(1.50, coinSlot.getCurrentBalance(), 0.1);
+    }
 }

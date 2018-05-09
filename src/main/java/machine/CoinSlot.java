@@ -55,9 +55,14 @@ public class CoinSlot {
         return 0;
     }
 
-//    public double coinsValue() {
-//
-//        for each of the coins in our coins arraylist
-//
-//    }
+    public double getCurrentBalance() {
+        double total = 0;
+
+        for (Coin coin : this.coins){
+            total += getCoinValue(coin);
+        }
+
+        return total;
+    }
+
 }
