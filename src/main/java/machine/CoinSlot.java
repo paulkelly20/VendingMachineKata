@@ -16,16 +16,13 @@ public class CoinSlot {
         return this.coins.size();
     }
 
-    public void addCoin(Coin coin) {
-        this.coins.add(coin);
-    }
+    public Coin addCoin(Coin coin) {
+        if (getCoinValue(coin) > 0){
+            this.coins.add(coin);
+        }
 
-//    FIVEPENCE(3.25, 18.0),
-//    TENPENCE(6.5, 24.5),
-//    TWENTYPENCE(5.0, 21.4),
-//    FIFTYPENCE(8.0, 27.3),
-//    ONEPOUND(9.5, 22.5),
-//    TWOPOUND(12.0, 28.4);
+        return coin;
+    }
 
     public double getCoinValue(Coin coin){
         if (coin.getWeightFromEnum() == CoinType.FIVEPENCE.getWeight() && coin.getCoinDiameter() == CoinType.FIVEPENCE.getDiameter()){

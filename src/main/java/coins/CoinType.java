@@ -1,6 +1,7 @@
 package coins;
 
 public enum CoinType {
+    ONEPENCE(1.0, 1.0),
     FIVEPENCE(3.25, 18.0),
     TENPENCE(6.5, 24.5),
     TWENTYPENCE(5.0, 21.4),

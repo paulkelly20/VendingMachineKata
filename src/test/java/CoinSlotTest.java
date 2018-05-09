@@ -24,9 +24,16 @@ public class CoinSlotTest {
     }
 
     @Test
-    public void canAddCoin() {
+    public void canAddValidCoin() {
         coinSlot.addCoin(onePound);
         assertEquals(1, coinSlot.countNumberOfCoins());
+    }
+
+    @Test
+    public void cannotAcceptInvalidCoin() {
+        Coin invalidCoin = new Coin(CoinType.ONEPENCE);
+        coinSlot.addCoin(invalidCoin);
+        assertEquals(0, coinSlot.countNumberOfCoins());
     }
 
     @Test
