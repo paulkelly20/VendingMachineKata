@@ -4,8 +4,12 @@ import coins.Coin;
 import coins.CoinType;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public abstract class TillFunction {
+
+
 
     public double getCoinValue(Coin coin) {
         if (coin.getWeightFromEnum() == CoinType.FIVEPENCE.getWeight() && coin.getCoinDiameter() == CoinType.FIVEPENCE.getDiameter()) {
