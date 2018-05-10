@@ -40,4 +40,12 @@ public class CustomerTest {
     public void customerHasEmptyPocket() {
             assertEquals(0, customer.getProductCount());
     }
+
+    @Test
+    public void addProductToPocketCustomerHasOneItemInPocket() {
+        customer.addProductToPocket(product);
+        assertEquals(1, customer.getProductCount());
+    }
+
+
 }
