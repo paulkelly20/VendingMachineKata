@@ -47,5 +47,9 @@ public class CustomerTest {
         assertEquals(1, customer.getProductCount());
     }
 
-
+    @Test
+    public void addCoinToCoinSlotCheckWalletAmountAfter() {
+        customer.insertCoin(onePound);
+        assertEquals(1, customer.countCoinsInWallet());
+    }
 }

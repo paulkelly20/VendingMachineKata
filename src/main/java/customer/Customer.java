@@ -28,11 +28,14 @@ public class Customer {
         return pocket.size();
     }
 
-    public void addCoinToWallet(Coin coin){
-        this.wallet.add(coin);
-    }
 
     public void addProductToPocket(Product product){
         this.pocket.add(product);
+    }
+
+
+    public Coin insertCoin(Coin coin) {
+        this.wallet.remove(coin);
+        return coin;
     }
 }
