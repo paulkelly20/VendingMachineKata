@@ -7,7 +7,7 @@ import products.Sweet;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class VendingMachine extends TillFunction{
+public class VendingMachine {
     private CoinSlot coinSlot;
     private ArrayList<Position> positions;
     private KeyPad keyPad;
@@ -56,6 +56,16 @@ public class VendingMachine extends TillFunction{
 
     public int getNumberOfPositions() {
         return this.positions.size();
+    }
+
+    public double getCurrentBalance(ArrayList<Coin> coins) {
+        double total = 0;
+
+        for (Coin coin : coins ){
+            total += coin.getCoinValue();
+        }
+
+        return total;
     }
 
 

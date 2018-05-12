@@ -22,7 +22,7 @@ public class KeyPad {
     }
 
     public String displayCurrentBalance(CoinSlot coinSlot) {
-        return String.format("The balance is %.2f", coinSlot.getCurrentBalance(coinSlot.getCoins()));
+        return String.format("The balance is %.2f", coinSlot.getCurrentBalance());
     }
 
     public String displayPrice(Position position) {

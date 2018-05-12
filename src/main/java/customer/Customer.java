@@ -1,6 +1,7 @@
 package customer;
 
 import coins.Coin;
+import machine.CoinSlot;
 import products.Product;
 
 import java.util.ArrayList;
@@ -34,8 +35,14 @@ public class Customer {
     }
 
 
-    public Coin insertCoin(Coin coin) {
+    public Coin giveCoin(Coin coin) {
         this.wallet.remove(coin);
         return coin;
+    }
+
+    public void buyProduct(Product product, CoinSlot coinSlot) {
+       if(product.getPrice() <= coinSlot.getCurrentBalance()){
+           addProductToPocket(product);
+       }
     }
 }

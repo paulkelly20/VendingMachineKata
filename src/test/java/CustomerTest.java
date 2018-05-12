@@ -49,7 +49,15 @@ public class CustomerTest {
 
     @Test
     public void addCoinToCoinSlotCheckWalletAmountAfter() {
-        customer.insertCoin(onePound);
+        customer.giveCoin(onePound);
         assertEquals(1, customer.countCoinsInWallet());
+    }
+
+    @Test
+    public void checkPocketAfterCustomerBuysProduct() {
+
+        coinslot.addCoin(customer.giveCoin(onePound));
+        customer.buyProduct(product, coinslot);
+        assertEquals(1, customer.getProductCount());
     }
 }

@@ -38,14 +38,14 @@ public class CoinSlotTest {
 
     @Test
     public void canCalculateSingleCoinValue() {
-        assertEquals(1.00, coinslot.getCoinValue(onePound), 0.1);
-        assertEquals(0.50, coinslot.getCoinValue(fiftyPence), 0.1);
+        assertEquals(1.00, onePound.getCoinValue(), 0.1);
+        assertEquals(0.50, fiftyPence.getCoinValue(), 0.1);
     }
 
     @Test
     public void coinSlotCanCalculateMultipleCoinsValue() {
         coinslot.addCoin(onePound);
         coinslot.addCoin(fiftyPence);
-        assertEquals(1.50, coinslot.getCurrentBalance(coinslot.getCoins()), 0.1);
+        assertEquals(1.50, coinslot.getCurrentBalance(), 0.1);
     }
 }

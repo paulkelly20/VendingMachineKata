@@ -5,7 +5,7 @@ import coins.CoinType;
 
 import java.util.ArrayList;
 
-public class CoinSlot extends TillFunction{
+public class CoinSlot{
 
     private ArrayList<Coin> coins;
 
@@ -18,7 +18,7 @@ public class CoinSlot extends TillFunction{
     }
 
     public Coin addCoin(Coin coin) {
-        if (getCoinValue(coin) > 0){
+        if (coin.getCoinValue() > 0.04){
             this.coins.add(coin);
         }
 
@@ -29,6 +29,18 @@ public class CoinSlot extends TillFunction{
         ArrayList<Coin> clone = new ArrayList<>(coins);
         return clone;
     }
+
+    public double getCurrentBalance() {
+        double total = 0;
+
+        for (Coin coin : coins ){
+            total += coin.getCoinValue();
+        }
+
+        return total;
+    }
+
+
 
 
 }
