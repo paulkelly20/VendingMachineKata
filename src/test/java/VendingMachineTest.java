@@ -1,8 +1,6 @@
 import coins.Coin;
 import coins.CoinType;
-import machine.CoinSlot;
-import machine.KeyPad;
-import machine.VendingMachine;
+import machine.*;
 import org.junit.Before;
 import org.junit.Test;
 import products.Sweet;
@@ -16,7 +14,7 @@ public class VendingMachineTest {
     CoinSlot coinSlot;
     KeyPad keyPad;
     Sweet sweet;
-
+    Position position;
     Coin onePound;
 
 
@@ -26,6 +24,8 @@ public class VendingMachineTest {
         coinSlot = new CoinSlot();
         onePound = new Coin(CoinType.ONEPOUND);
         vendingMachine = new VendingMachine(coinSlot, keyPad);
+        sweet = new Sweet("Mars", 0.50);
+        position = new Position(0.50, Selection.A1);
     }
 
     @Test
@@ -43,4 +43,16 @@ public class VendingMachineTest {
         assertEquals(15.0, vendingMachine.getCurrentBalance(vendingMachine.getCoins()), 0.1);
     }
 
+    @Test
+    public void testEnoughMoneyInCoinSlotToBuyProduct() {
+        coinSlot.addCoin(onePound);
+        position.addStock(sweet);
+        assertEquals(true, vendingMachine.coinslotBalanceEnoughToBuyProuct(position));
+    }
+
+    @Test
+    public void testEnoughMoneyToBuyProductButProuctOutOfStock() {
+        coinSlot.addCoin(onePound);
+        assertEquals(false, vendingMachine.coinslotBalanceEnoughToBuyProuct(position));
+    }
 }

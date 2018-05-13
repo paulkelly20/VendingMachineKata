@@ -66,8 +66,10 @@ public class VendingMachine {
         return total;
     }
 
-    public void sellProduct(Product product){
-        if(coinSlot.getCurrentBalance() > product.getPrice()){}
+    public boolean coinslotBalanceEnoughToBuyProuct(Position position){
+        if (position.getStockLevel() >0){
+        if(coinSlot.getCurrentBalance() > position.getPrice()){return true;}}
+        return false;
     }
 
 
