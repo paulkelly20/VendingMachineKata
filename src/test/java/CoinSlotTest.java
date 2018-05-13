@@ -1,8 +1,11 @@
 import coins.Coin;
 import coins.CoinType;
+import customer.Customer;
 import machine.CoinSlot;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,12 +13,18 @@ public class CoinSlotTest {
     CoinSlot coinslot;
     Coin onePound;
     Coin fiftyPence;
+    Customer customer;
 
     @Before
     public void setUp() throws Exception {
         coinslot = new CoinSlot();
         onePound = new Coin(CoinType.ONEPOUND);
         fiftyPence = new Coin(CoinType.FIFTYPENCE);
+        ArrayList<Coin> wallet = new ArrayList<>();
+        wallet.add(onePound);
+        wallet.add(fiftyPence);
+        customer = new Customer("Paul", wallet);
+
     }
 
     @Test
@@ -47,5 +56,13 @@ public class CoinSlotTest {
         coinslot.addCoin(onePound);
         coinslot.addCoin(fiftyPence);
         assertEquals(1.50, coinslot.getCurrentBalance(), 0.1);
+    }
+
+    @Test
+    public void coinSlotReturnsAllCoins() {
+        coinslot.addCoin(onePound);
+        coinslot.addCoin(fiftyPence);
+        coinslot.returnAllCoins();
+        assertEquals(0, coinslot.countNumberOfCoins());
     }
 }

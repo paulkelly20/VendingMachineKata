@@ -44,12 +44,10 @@ public class VendingMachine {
 
     private void generateFloat(){
         ArrayList<Coin> floatcoins = new ArrayList<>();
-
         for (int i = 0; i < 5; i++){
             floatcoins.add(new Coin(CoinType.ONEPOUND));
             floatcoins.add(new Coin(CoinType.TWOPOUND));
         }
-
         coins.addAll(floatcoins);
 
     }

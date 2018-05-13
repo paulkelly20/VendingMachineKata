@@ -21,7 +21,6 @@ public class CoinSlot{
         if (coin.getCoinValue() > 0.04){
             this.coins.add(coin);
         }
-
         return coin;
     }
 
@@ -36,11 +35,18 @@ public class CoinSlot{
         for (Coin coin : coins ){
             total += coin.getCoinValue();
         }
-
         return total;
     }
 
 
+    public ArrayList<Coin> returnAllCoins() {
+        ArrayList<Coin> change = new ArrayList<>();
+        coins.removeAll(change);
+        coins.clear();
+        return change;
+    }
 
-
+    public int CoinCoinsReturned(){
+        returnAllCoins().size();
+    }
 }
