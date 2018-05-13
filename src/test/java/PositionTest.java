@@ -36,6 +36,18 @@ public class PositionTest {
         assertEquals(2, position.getStockLevel());
     }
 
-
+    @Test
+    public void checkIfProductIsInStock() {
+        Sweet sweet = new Sweet("Mars Bar", 0.50);
+        position.addStock(sweet);
+        assertEquals(true, position.checkStock(sweet));
+    }
+//
+//    @Test
+//    public void checkIfProductIsInStock() {
+//        Sweet sweet = new Sweet("Mars Bar", 0.50);
+//        position.addStock(sweet);
+//        assertEquals(true, position.checkStock(sweet));
+//    }
 }
 

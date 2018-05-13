@@ -40,4 +40,9 @@ public class Position {
     public Product dispenseProduct() {
         return this.products.remove(0);
     }
+
+    public boolean checkStock(Product product) {
+       if (this.products.contains(product)){return true;}
+        return false;
+    }
 }

@@ -2,6 +2,7 @@ package machine;
 
 import coins.Coin;
 import coins.CoinType;
+import products.Product;
 import products.Sweet;
 
 import java.lang.reflect.Array;
@@ -62,8 +63,11 @@ public class VendingMachine {
         for (Coin coin : coins ){
             total += coin.getCoinValue();
         }
-
         return total;
+    }
+
+    public void sellProduct(Product product){
+        if(coinSlot.getCurrentBalance() > product.getPrice()){}
     }
 
 
