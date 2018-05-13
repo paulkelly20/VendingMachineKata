@@ -49,4 +49,8 @@ public class Customer {
     public void addCoinToWallet(Coin coin){
         this.wallet.add(coin);
     }
+
+    public void addChangeToWallet(ArrayList<Coin> change) {
+        this.wallet.addAll(change);
+    }
 }

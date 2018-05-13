@@ -65,4 +65,13 @@ public class CustomerTest {
         customer.addCoinToWallet(onePound);
         assertEquals(3, customer.countCoinsInWallet());
     }
+
+    @Test
+    public void customerCanAddChangeToPocket(){
+        ArrayList<Coin> change = new ArrayList<>();
+        change.add(onePound);
+        change.add(fiftyPence);
+        customer.addChangeToWallet(change);
+        assertEquals(4, customer.countCoinsInWallet());
+    }
 }
