@@ -55,9 +55,14 @@ public class CustomerTest {
 
     @Test
     public void checkPocketAfterCustomerBuysProduct() {
-
         coinslot.addCoin(customer.giveCoin(onePound));
         customer.buyProduct(product, coinslot);
         assertEquals(1, customer.getProductCount());
+    }
+
+    @Test
+    public void checkIfCustomerCanAddCoinToPocket() {
+        customer.addCoinToWallet(onePound);
+        assertEquals(3, customer.countCoinsInWallet());
     }
 }

@@ -45,4 +45,8 @@ public class Customer {
            addProductToPocket(product);
        }
     }
+
+    public void addCoinToWallet(Coin coin){
+        this.wallet.add(coin);
+    }
 }
