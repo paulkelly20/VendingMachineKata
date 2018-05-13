@@ -40,13 +40,15 @@ public class CoinSlot{
 
 
     public ArrayList<Coin> returnAllCoins() {
-        ArrayList<Coin> change = new ArrayList<>();
-        coins.removeAll(change);
+        ArrayList<Coin> change =  new ArrayList<>();
+        change.addAll(coins);
         coins.clear();
         return change;
     }
 
-    public int CoinCoinsReturned(){
-        returnAllCoins().size();
+    public int countCoinsReturned(){
+        return returnAllCoins().size();
     }
 }
+
+
