@@ -39,7 +39,7 @@ public class CoinSlot{
     }
 
 
-    public ArrayList<Coin> returnAllCoins() {
+    public ArrayList<Coin> coinSlotReleasesAllCoins() {
         ArrayList<Coin> change =  new ArrayList<>();
         change.addAll(coins);
         coins.clear();
@@ -47,8 +47,11 @@ public class CoinSlot{
     }
 
     public int countCoinsReturned(){
-        return returnAllCoins().size();
+        return coinSlotReleasesAllCoins().size();
     }
+
+
+
 }
 
 

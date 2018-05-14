@@ -62,7 +62,7 @@ public class CoinSlotTest {
     public void coinSlotReturnsAllCoins() {
         coinslot.addCoin(onePound);
         coinslot.addCoin(fiftyPence);
-        coinslot.returnAllCoins();
+        coinslot.coinSlotReleasesAllCoins();
         assertEquals(0, coinslot.countNumberOfCoins());
 
     }
@@ -81,7 +81,7 @@ public class CoinSlotTest {
         ArrayList<Coin> returnedCoins = new ArrayList<>();
         returnedCoins.add(onePound);
         returnedCoins.add(fiftyPence);
-        assertEquals(returnedCoins, coinslot.returnAllCoins());
+        assertEquals(returnedCoins, coinslot.coinSlotReleasesAllCoins());
     }
 
 

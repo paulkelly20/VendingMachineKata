@@ -5,8 +5,6 @@ import org.junit.Before;
 import org.junit.Test;
 import products.Sweet;
 
-import java.util.ArrayList;
-
 import static org.junit.Assert.assertEquals;
 
 public class VendingMachineTest {
@@ -40,7 +38,7 @@ public class VendingMachineTest {
 
     @Test
     public void hasFifteenQuid() {
-        assertEquals(15.0, vendingMachine.getCurrentBalance(vendingMachine.getCoins()), 0.1);
+        assertEquals(15.0, vendingMachine.getCurrentBalance(vendingMachine.getTill()), 0.1);
     }
 
     @Test
@@ -55,4 +53,13 @@ public class VendingMachineTest {
         coinSlot.addCoin(onePound);
         assertEquals(false, vendingMachine.coinslotBalanceEnoughToBuyProuct(position));
     }
+
+    @Test
+    public void coinsFromCoinSlotGoToTill() {
+        coinSlot.addCoin(onePound);
+        vendingMachine.addMulitpleCoinsToTill(coinSlot.coinSlotReleasesAllCoins());
+        assertEquals(11,vendingMachine.countNumberOfCoins());
+    }
+
+
 }

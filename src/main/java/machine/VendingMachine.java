@@ -2,17 +2,14 @@ package machine;
 
 import coins.Coin;
 import coins.CoinType;
-import products.Product;
-import products.Sweet;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class VendingMachine {
     private CoinSlot coinSlot;
     private ArrayList<Position> positions;
     private KeyPad keyPad;
-    private ArrayList<Coin> coins;
+    private ArrayList<Coin> till;
 
 
 
@@ -20,19 +17,19 @@ public class VendingMachine {
         this.coinSlot = coinSlot;
         this.positions = new ArrayList<>();
         this.keyPad = keyPad;
-        this.coins = new ArrayList<>();
+        this.till = new ArrayList<>();
         generatePositions();
         generateFloat();
 
     }
 
-    public ArrayList<Coin> getCoins() {
-        ArrayList<Coin> clone = new ArrayList<>(coins);
+    public ArrayList<Coin> getTill() {
+        ArrayList<Coin> clone = new ArrayList<>(till);
         return clone;
     }
 
     public int countNumberOfCoins() {
-        return coins.size();
+        return till.size();
     }
 
     private void generatePositions() {
@@ -49,7 +46,7 @@ public class VendingMachine {
             floatcoins.add(new Coin(CoinType.ONEPOUND));
             floatcoins.add(new Coin(CoinType.TWOPOUND));
         }
-        coins.addAll(floatcoins);
+        till.addAll(floatcoins);
 
     }
 
@@ -71,6 +68,17 @@ public class VendingMachine {
         if(coinSlot.getCurrentBalance() > position.getPrice()){return true;}}
         return false;
     }
+
+    public void addMulitpleCoinsToTill(ArrayList<Coin> coins){
+        this.till.addAll(coins);
+    }
+
+//    public void sellProduct(Position position){
+//        if (coinslotBalanceEnoughToBuyProuct(position)){
+//            coinSlot.getCurrentBalance() -= position.getPrice()
+//        }
+
+//    }
 
 
 
