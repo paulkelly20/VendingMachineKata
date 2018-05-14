@@ -1,9 +1,12 @@
 import coins.Coin;
 import coins.CoinType;
+import customer.Customer;
 import machine.*;
 import org.junit.Before;
 import org.junit.Test;
 import products.Sweet;
+
+import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,6 +17,8 @@ public class VendingMachineTest {
     Sweet sweet;
     Position position;
     Coin onePound;
+    Coin fiftyPence;
+    Customer customer;
 
 
     @Before
@@ -24,6 +29,12 @@ public class VendingMachineTest {
         vendingMachine = new VendingMachine(coinSlot, keyPad);
         sweet = new Sweet("Mars", 0.50);
         position = new Position(0.50, Selection.A1);
+        onePound = new Coin(CoinType.ONEPOUND);
+        fiftyPence = new Coin(CoinType.FIFTYPENCE);
+        ArrayList<Coin> wallet = new ArrayList<>();
+        wallet.add(onePound);
+        wallet.add(fiftyPence);
+        customer = new Customer("Paul", wallet);
     }
 
     @Test
@@ -61,5 +72,9 @@ public class VendingMachineTest {
         assertEquals(11,vendingMachine.countNumberOfCoins());
     }
 
-
+    @Test
+    public void tillGivesChange(){
+        vendingMachine.giveChange(3.00, customer);
+        assertEquals(9, vendingMachine.countNumberOfCoins());
+    }
 }

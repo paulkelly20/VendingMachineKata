@@ -14,8 +14,12 @@ public class Coin {
     public double getCoinDiameter() {
         return coinType.getDiameter();
     }
+
     public double getCoinValue(){
         return coinType.getValue();
     }
 
+    public CoinType getCoinType() {
+        return coinType;
+    }
 }
