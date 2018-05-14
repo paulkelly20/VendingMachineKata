@@ -44,12 +44,12 @@ public class VendingMachineTest {
 
     @Test
     public void testNumberOfCoinsInmachine() {
-        assertEquals(10, vendingMachine.countNumberOfCoins());
+        assertEquals(30, vendingMachine.countNumberOfCoins());
     }
 
     @Test
     public void hasFifteenQuid() {
-        assertEquals(15.0, vendingMachine.getCurrentBalance(vendingMachine.getTill()), 0.1);
+        assertEquals(19.25, vendingMachine.getCurrentBalance(vendingMachine.getTill()), 0.1);
     }
 
     @Test
@@ -69,12 +69,27 @@ public class VendingMachineTest {
     public void coinsFromCoinSlotGoToTill() {
         coinSlot.addCoin(onePound);
         vendingMachine.addMulitpleCoinsToTill(coinSlot.coinSlotReleasesAllCoins());
-        assertEquals(11,vendingMachine.countNumberOfCoins());
+        assertEquals(31,vendingMachine.countNumberOfCoins());
     }
 
     @Test
     public void tillGivesChange(){
+        vendingMachine.giveChange(2.00, customer);
+        assertEquals(29, vendingMachine.countNumberOfCoins());
+    }
+
+    @Test
+    public void tillGivesThreePoundChange(){
         vendingMachine.giveChange(3.00, customer);
-        assertEquals(9, vendingMachine.countNumberOfCoins());
+        assertEquals(28, vendingMachine.countNumberOfCoins());
+        assertEquals(4, customer.countCoinsInWallet());
+    }
+
+    @Test
+    public void customerBuysProduct() {
+        position.addStock(sweet);
+        coinSlot.addCoin(customer.giveCoin(onePound));
+        vendingMachine.sellProduct(position, customer);
+        assertEquals(0, position.getStockLevel());
     }
 }

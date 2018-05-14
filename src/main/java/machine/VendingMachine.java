@@ -43,8 +43,12 @@ public class VendingMachine {
     private void generateFloat() {
         ArrayList<Coin> floatcoins = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            floatcoins.add(new Coin(CoinType.ONEPOUND));
             floatcoins.add(new Coin(CoinType.TWOPOUND));
+            floatcoins.add(new Coin(CoinType.ONEPOUND));
+            floatcoins.add(new Coin(CoinType.FIFTYPENCE));
+            floatcoins.add(new Coin(CoinType.TWENTYPENCE));
+            floatcoins.add(new Coin(CoinType.TENPENCE));
+            floatcoins.add(new Coin(CoinType.FIVEPENCE));
         }
         till.addAll(floatcoins);
 
@@ -76,35 +80,83 @@ public class VendingMachine {
         this.till.addAll(coins);
     }
 
-    public void giveChange(double change, Customer customer) {
-        ArrayList<Coin> changeCoins = new ArrayList<>();
 
-            for (Coin coin : this.till){
-                    if (coin.getCoinType() == CoinType.TWOPOUND) {
-                        this.till.remove(coin);
-                        changeCoins.add(coin);
-                        change -= 2.00;
-                        if(change < 2.00) break;{
-                            }
-                    }
-
-            }
-            customer.addChangeToWallet(changeCoins);
+    public void sellProduct(Position position, Customer customer){
+        double temporaryBalance = coinSlot.getCurrentBalance();
+        if (coinslotBalanceEnoughToBuyProuct(position)){
+            addMulitpleCoinsToTill(coinSlot.coinSlotReleasesAllCoins());
+            position.dispenseProduct();
+            temporaryBalance -= position.getPrice();
+            giveChange(temporaryBalance, customer);
         }
-
     }
 
 
+    public void giveChange(double change, Customer customer) {
+        ArrayList<Coin> changeCoins = new ArrayList<>();
+        if(change >= 2.00) {
+            for (Coin coin : this.till) {
+                if (coin.getCoinType() == CoinType.TWOPOUND) {
+                    this.till.remove(coin);
+                    changeCoins.add(coin);
+                    change -= 2.00;
+                    if (change < 2.00) break;
+                }
+            }
+        }
+        if(change >= 1.00) {
+            for (Coin coin : this.till) {
+                if (coin.getCoinType() == CoinType.ONEPOUND) {
+                    this.till.remove(coin);
+                    changeCoins.add(coin);
+                    change -= 1.00;
+                    if (change < 1.00) break;
+                }
+            }
+        }
+        if(change >= 0.50) {
+            for (Coin coin : this.till) {
+                if (coin.getCoinType() == CoinType.FIFTYPENCE) {
+                    this.till.remove(coin);
+                    changeCoins.add(coin);
+                    change -= 0.50;
+                    if (change < 0.50) break;
+                }
+            }
+        }
+        if(change >= 0.20) {
+            for (Coin coin : this.till) {
+                if (coin.getCoinType() == CoinType.TWENTYPENCE) {
+                    this.till.remove(coin);
+                    changeCoins.add(coin);
+                    change -= 0.20;
+                    if (change < 0.20) break;
+                }
+            }
+        }
+        if(change >= 0.10) {
+            for (Coin coin : this.till) {
+                if (coin.getCoinType() == CoinType.TENPENCE) {
+                    this.till.remove(coin);
+                    changeCoins.add(coin);
+                    change -= 0.10;
+                    if (change < 0.10) break;
+                }
+            }
+        }   if(change >= 0.05) {
+            for (Coin coin : this.till) {
+                if (coin.getCoinType() == CoinType.FIVEPENCE) {
+                    this.till.remove(coin);
+                    changeCoins.add(coin);
+                    change -= 0.05;
+                    if (change < 0.05) break;
+                }
+            }
+        }
+        customer.addChangeToWallet(changeCoins);
+    }
 
-//    public void sellProduct(Position position){
-//        double temporaryBalance = coinSlot.getCurrentBalance();
-//        if (coinslotBalanceEnoughToBuyProuct(position)){
-//            addMulitpleCoinsToTill(coinSlot.coinSlotReleasesAllCoins());
-//            position.dispenseProduct();
-//            temporaryBalance -= position.getPrice();
-//        }
-//
-//    }
+}
 
 
 
