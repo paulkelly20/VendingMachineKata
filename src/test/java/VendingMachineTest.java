@@ -34,6 +34,9 @@ public class VendingMachineTest {
         ArrayList<Coin> wallet = new ArrayList<>();
         wallet.add(onePound);
         wallet.add(fiftyPence);
+        wallet.add(fiftyPence);
+        wallet.add(fiftyPence);
+        wallet.add(fiftyPence);
         customer = new Customer("Paul", wallet);
     }
 
@@ -82,7 +85,7 @@ public class VendingMachineTest {
     public void tillGivesThreePoundChange(){
         vendingMachine.giveChange(3.00, customer);
         assertEquals(28, vendingMachine.countNumberOfCoins());
-        assertEquals(4, customer.countCoinsInWallet());
+        assertEquals(7, customer.countCoinsInWallet());
     }
 
     @Test
@@ -92,4 +95,15 @@ public class VendingMachineTest {
         vendingMachine.sellProduct(position, customer);
         assertEquals(0, position.getStockLevel());
     }
+//
+//    @Test
+//    public void customerBuysProductCheckChange() {
+//        position.addStock(sweet);
+//        coinSlot.addCoin(customer.giveCoin(onePound));
+//        coinSlot.addCoin(customer.giveCoin(fiftyPence));
+//        coinSlot.addCoin(customer.giveCoin(fiftyPence));
+//        coinSlot.addCoin(customer.giveCoin(fiftyPence));
+//        vendingMachine.sellProduct(position, customer);
+//        assertEquals(2.50, customer.walletTotal(), 0.01);
+//    }
 }

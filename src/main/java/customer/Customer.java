@@ -53,4 +53,13 @@ public class Customer {
     public void addChangeToWallet(ArrayList<Coin> change) {
         this.wallet.addAll(change);
     }
+
+    public double walletTotal() {
+        double total = 0;
+
+        for (Coin coin : this.wallet ){
+            total += coin.getCoinValue();
+        }
+        return total;
+    }
 }

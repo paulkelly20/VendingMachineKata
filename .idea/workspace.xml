@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3cc9b15-15f7-454d-913b-34cd689eeb45" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/machine/KeyPad.java" afterPath="$PROJECT_DIR$/src/main/java/machine/KeyPad.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/customer/Customer.java" afterPath="$PROJECT_DIR$/src/main/java/customer/Customer.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CustomerTest.java" afterPath="$PROJECT_DIR$/src/test/java/CustomerTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/KeyPadTest.java" afterPath="$PROJECT_DIR$/src/test/java/KeyPadTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/VendingMachineTest.java" afterPath="$PROJECT_DIR$/src/test/java/VendingMachineTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -40,33 +42,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KeyPadTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KeyPadTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/KeyPadTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Button.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/machine/Button.java">
+      <file leaf-file-name="SweetTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/SweetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="285">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoinType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/coins/CoinType.java">
+      <file leaf-file-name="CustomerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/CustomerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="403">
+              <caret line="79" column="52" lean-forward="false" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
               <folding>
-                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#2089#2090#0" expanded="true" />
+                <element signature="e#2150#2151#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VendingMachineTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VendingMachineTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/VendingMachineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="84" column="22" lean-forward="false" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+            <state relative-caret-position="310">
+              <caret line="106" column="55" lean-forward="false" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,10 +135,11 @@
       <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/customer/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding>
                 <element signature="e#1131#1132#0" expanded="true" />
+                <element signature="e#1173#1174#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,8 +148,8 @@
       <file leaf-file-name="CoinSlot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/machine/CoinSlot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="147">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="38" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#172#173#0" expanded="true" />
@@ -485,17 +489,17 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/machine/TillFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/coins/CoinType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/customer/Customer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CustomerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/machine/Position.java" />
         <option value="$PROJECT_DIR$/src/test/java/PositionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/machine/CoinSlot.java" />
         <option value="$PROJECT_DIR$/src/test/java/CoinSlotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/coins/Coin.java" />
-        <option value="$PROJECT_DIR$/src/test/java/VendingMachineTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/machine/VendingMachine.java" />
         <option value="$PROJECT_DIR$/src/main/java/machine/KeyPad.java" />
         <option value="$PROJECT_DIR$/src/test/java/KeyPadTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/customer/Customer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/CustomerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/VendingMachineTest.java" />
       </list>
     </option>
   </component>
@@ -847,12 +851,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 18h 41m 34s.xml">
-      <configuration name="All in VendingMachine_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 19h 00m 21s.xml">
-      <configuration name="All in VendingMachine_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 19h 00m 25s.xml">
       <configuration name="All in VendingMachine_test" configurationId="JUnit" />
     </history-entry>
@@ -869,6 +867,12 @@
       <configuration name="All in VendingMachine_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 21h 00m 38s.xml">
+      <configuration name="All in VendingMachine_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 21h 05m 49s.xml">
+      <configuration name="All in VendingMachine_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 21h 06m 20s.xml">
       <configuration name="All in VendingMachine_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="KeyPadTest_productSoldOut - 2018.05.14 at 20h 55m 57s.xml">
@@ -997,6 +1001,7 @@
           <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1165,14 +1170,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/machine/TillFunction.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/SweetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CoinTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1196,14 +1193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CustomerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1268,29 +1257,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/VendingMachineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="84" column="22" lean-forward="false" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Image uploaded from iOS copy.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/customer/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding>
-            <element signature="e#1131#1132#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/machine/Button.java">
@@ -1298,22 +1267,6 @@
         <state relative-caret-position="105">
           <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/machine/CoinSlot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1374,9 +1327,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/KeyPadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SweetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/machine/CoinSlot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/customer/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CustomerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="79" column="52" lean-forward="false" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
+          <folding>
+            <element signature="e#2089#2090#0" expanded="true" />
+            <element signature="e#2150#2151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/VendingMachineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="106" column="55" lean-forward="false" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

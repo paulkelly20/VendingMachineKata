@@ -74,4 +74,9 @@ public class CustomerTest {
         customer.addChangeToWallet(change);
         assertEquals(4, customer.countCoinsInWallet());
     }
+
+    @Test
+    public void getWalletTotal() {
+        assertEquals(1.50, customer.walletTotal(), 0);
+    }
 }

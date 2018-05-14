@@ -15,6 +15,7 @@ public class KeyPadTest {
     @Before
     public void setUp() throws Exception {
         keypad = new KeyPad();
+
     }
 
     @Test
@@ -42,4 +43,6 @@ public class KeyPadTest {
         Position position = new Position(0.50, Selection.A1);
         assertEquals("A1 out of stock", keypad.displayOutOfStock(position));
     }
+
+
 }
