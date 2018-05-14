@@ -95,15 +95,15 @@ public class VendingMachineTest {
         vendingMachine.sellProduct(position, customer);
         assertEquals(0, position.getStockLevel());
     }
-//
-//    @Test
-//    public void customerBuysProductCheckChange() {
-//        position.addStock(sweet);
-//        coinSlot.addCoin(customer.giveCoin(onePound));
-//        coinSlot.addCoin(customer.giveCoin(fiftyPence));
-//        coinSlot.addCoin(customer.giveCoin(fiftyPence));
-//        coinSlot.addCoin(customer.giveCoin(fiftyPence));
-//        vendingMachine.sellProduct(position, customer);
-//        assertEquals(2.50, customer.walletTotal(), 0.01);
-//    }
+
+    @Test
+    public void customerBuysProductCheckChange() {
+        position.addStock(sweet);
+        coinSlot.addCoin(customer.giveCoin(onePound));
+        coinSlot.addCoin(customer.giveCoin(fiftyPence));
+        coinSlot.addCoin(customer.giveCoin(fiftyPence));
+        coinSlot.addCoin(customer.giveCoin(fiftyPence));
+        vendingMachine.sellProduct(position, customer);
+        assertEquals(2.50, customer.walletTotal(), 0.01);
+    }
 }
