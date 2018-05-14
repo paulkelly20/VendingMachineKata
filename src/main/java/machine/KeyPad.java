@@ -29,4 +29,8 @@ public class KeyPad {
         return String.format("The price is %.2f", position.getPrice());
     }
 
+    public String thankYou(){
+        return "Thank You!";
+    }
+
 }

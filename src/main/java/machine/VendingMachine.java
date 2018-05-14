@@ -86,6 +86,7 @@ public class VendingMachine {
         if (coinslotBalanceEnoughToBuyProuct(position)){
             addMulitpleCoinsToTill(coinSlot.coinSlotReleasesAllCoins());
             position.dispenseProduct();
+            keyPad.thankYou();
             temporaryBalance -= position.getPrice();
             giveChange(temporaryBalance, customer);
         }
