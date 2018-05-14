@@ -33,4 +33,9 @@ public class KeyPad {
         return "Thank You!";
     }
 
+    public String displayOutOfStock(Position position) {
+        if(position.getStockLevel() < 1){
+            return String.format("%s out of stock", position.getSelection());
+        } else return String.format("%s in stock", position.getSelection());
+    }
 }

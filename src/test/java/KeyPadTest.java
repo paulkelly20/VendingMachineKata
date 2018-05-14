@@ -36,4 +36,10 @@ public class KeyPadTest {
         Position position = new Position(0.50, Selection.A1);
         assertEquals("The price is 0.50", keypad.displayPrice(position));
     }
+
+    @Test
+    public void productSoldOut() {
+        Position position = new Position(0.50, Selection.A1);
+        assertEquals("A1 out of stock", keypad.displayOutOfStock(position));
+    }
 }

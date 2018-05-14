@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3cc9b15-15f7-454d-913b-34cd689eeb45" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/machine/KeyPad.java" afterPath="$PROJECT_DIR$/src/main/java/machine/KeyPad.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/KeyPadTest.java" afterPath="$PROJECT_DIR$/src/test/java/KeyPadTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VendingMachine.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VendingMachine.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/machine/VendingMachine.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="241">
@@ -36,6 +36,16 @@
                 <element signature="e#2113#2114#0" expanded="true" />
                 <element signature="e#2152#2153#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyPadTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/KeyPadTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,8 +75,8 @@
       <file leaf-file-name="KeyPad.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/machine/KeyPad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="393">
+              <caret line="38" column="76" lean-forward="false" selection-start-line="38" selection-start-column="76" selection-end-line="38" selection-end-column="76" />
               <folding>
                 <element signature="e#442#443#0" expanded="true" />
                 <element signature="e#484#485#0" expanded="true" />
@@ -94,7 +104,7 @@
       <file leaf-file-name="Position.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/machine/Position.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="181">
               <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#461#462#0" expanded="true" />
@@ -126,22 +136,6 @@
               <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding>
                 <element signature="e#1131#1132#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Coin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/coins/Coin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#103#104#0" expanded="true" />
-                <element signature="e#143#144#0" expanded="true" />
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -488,7 +482,6 @@
         <option value="$PROJECT_DIR$/src/main/java/machine/CountBalance.java" />
         <option value="$PROJECT_DIR$/src/main/java/machine/CountMoney.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/java/KeyPadTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/machine/TillFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/coins/CoinType.java" />
@@ -500,8 +493,9 @@
         <option value="$PROJECT_DIR$/src/test/java/CoinSlotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/coins/Coin.java" />
         <option value="$PROJECT_DIR$/src/test/java/VendingMachineTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/machine/KeyPad.java" />
         <option value="$PROJECT_DIR$/src/main/java/machine/VendingMachine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/machine/KeyPad.java" />
+        <option value="$PROJECT_DIR$/src/test/java/KeyPadTest.java" />
       </list>
     </option>
   </component>
@@ -699,14 +693,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="VendingMachineTest.getValueOfFirstCoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KeyPadTest.productSoldOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="VendingMachine_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VendingMachineTest" />
-      <option name="METHOD_NAME" value="getValueOfFirstCoin" />
+      <option name="MAIN_CLASS_NAME" value="KeyPadTest" />
+      <option name="METHOD_NAME" value="productSoldOut" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -719,14 +713,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="VendingMachineTest.hasFifteenQuid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendingMachineTest.getValueOfFirstCoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="VendingMachine_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="VendingMachineTest" />
-      <option name="METHOD_NAME" value="hasFifteenQuid" />
+      <option name="METHOD_NAME" value="getValueOfFirstCoin" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -822,17 +816,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in VendingMachine_test" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.VendingMachineTest.testNumberOfCoinsInmachine" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VendingMachineTest.hasFifteenQuid" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VendingMachineTest.getValueOfFirstCoin" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.KeyPadTest.canDisplayCurrentBalance" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.VendingMachineTest.getValueOfFirstCoin" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.KeyPadTest.canDisplayCurrentBalance" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.KeyPadTest.productSoldOut" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in VendingMachine_test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.KeyPadTest.canDisplayCurrentBalance" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VendingMachineTest.getValueOfFirstCoin" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VendingMachineTest.testNumberOfCoinsInmachine" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VendingMachineTest.hasFifteenQuid" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.KeyPadTest.productSoldOut" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.KeyPadTest.canDisplayCurrentBalance" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.VendingMachineTest.getValueOfFirstCoin" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.VendingMachineTest.testNumberOfCoinsInmachine" />
       </list>
     </recent_temporary>
   </component>
@@ -853,15 +847,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 18h 37m 33s.xml">
-      <configuration name="All in VendingMachine_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 18h 38m 02s.xml">
-      <configuration name="All in VendingMachine_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 18h 40m 46s.xml">
-      <configuration name="All in VendingMachine_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 18h 41m 34s.xml">
       <configuration name="All in VendingMachine_test" configurationId="JUnit" />
     </history-entry>
@@ -883,6 +868,15 @@
     <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 19h 03m 02s.xml">
       <configuration name="All in VendingMachine_test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_VendingMachine_test - 2018.05.14 at 21h 00m 38s.xml">
+      <configuration name="All in VendingMachine_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyPadTest_productSoldOut - 2018.05.14 at 20h 55m 57s.xml">
+      <configuration name="KeyPadTest.productSoldOut" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="KeyPadTest_productSoldOut - 2018.05.14 at 21h 00m 31s.xml">
+      <configuration name="KeyPadTest.productSoldOut" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -890,14 +884,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17045455" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2627841" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2627841" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24717286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -913,7 +908,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2778542" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17045455" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1179,14 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/KeyPadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CoinTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1249,11 +1235,11 @@
         <state relative-caret-position="210">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#103#104#0" expanded="false" />
+            <element signature="e#143#144#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
+            <element signature="e#425#426#0" expanded="false" />
+            <element signature="e#456#457#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1315,30 +1301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/machine/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/machine/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/machine/CoinSlot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1351,21 +1313,6 @@
             <element signature="e#292#293#0" expanded="true" />
             <element signature="e#980#981#0" expanded="true" />
             <element signature="e#1036#1037#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/machine/KeyPad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1383,6 +1330,53 @@
             <element signature="e#2113#2114#0" expanded="true" />
             <element signature="e#2152#2153#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/machine/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/machine/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/machine/KeyPad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="38" column="76" lean-forward="false" selection-start-line="38" selection-start-column="76" selection-end-line="38" selection-end-column="76" />
+          <folding>
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/KeyPadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
