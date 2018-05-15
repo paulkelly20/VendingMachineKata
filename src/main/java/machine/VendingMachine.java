@@ -122,55 +122,27 @@ public class VendingMachine {
         customer.addChangeToWallet(customerChange);
     }
 
+        public boolean EnoughCoinsToGiveChange() {
+           int twoPound = groupCoinsByType(CoinType.TWOPOUND) ;
+            int onePound = groupCoinsByType(CoinType.ONEPOUND);
+             int fiftyPence= groupCoinsByType(CoinType.FIFTYPENCE);
+             int twentyPence =groupCoinsByType(CoinType.TWENTYPENCE);
+           int tenPence = groupCoinsByType(CoinType.TENPENCE);
+            int fivePence = groupCoinsByType(CoinType.FIVEPENCE);
 
-    public Boolean EnoughCoinsToGiveChange() {
-        int twoPound = 0;
-        int onePound = 0;
-        int fiftyPence = 0;
-        int twentyPence = 0;
-        int tenPence = 0;
-        int fivePence = 0;
-        for (Coin coin : this.till) {
-            if (coin.getCoinType() == CoinType.TWOPOUND) {
-                twoPound++;
-            }
+        if(twoPound < 2 || onePound < 2 || fiftyPence < 2 || twentyPence < 2 || tenPence < 2 || fivePence < 2){
+        return true;
+    } return false;
         }
 
-
+    public int groupCoinsByType(CoinType coinType) {
+        int result = 0;
         for (Coin coin : this.till) {
-            if (coin.getCoinType() == CoinType.ONEPOUND) {
-                onePound++;
+            if (coin.getCoinType() == coinType) {
+                result++;
             }
-        }
+        }return result;
 
-        {
-            for (Coin coin : this.till) {
-                if (coin.getCoinType() == CoinType.FIFTYPENCE) {
-                    fiftyPence++;
-                }
-            }
-
-
-            for (Coin coin : this.till) {
-                if (coin.getCoinType() == CoinType.TWENTYPENCE) {
-                    twentyPence++;
-                }
-            }
-        }
-
-        for (Coin coin : this.till) {
-            if (coin.getCoinType() == CoinType.TENPENCE) {
-                tenPence++;
-            }
-        }
-
-        for (Coin coin : this.till) {
-            if (coin.getCoinType() == CoinType.FIVEPENCE) {
-                fivePence++;
-            }
-        } if(twoPound < 2 || onePound < 2 || fiftyPence < 2 || twentyPence < 2 || tenPence < 2 || fivePence < 2){
-            return true;
-        } return false;
     }
 
     public void emptyTill() {
