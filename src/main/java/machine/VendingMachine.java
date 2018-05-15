@@ -3,6 +3,7 @@ package machine;
 import coins.Coin;
 import coins.CoinType;
 import customer.Customer;
+import products.Product;
 
 import java.util.ArrayList;
 
@@ -11,6 +12,7 @@ public class VendingMachine {
     private ArrayList<Position> positions;
     private KeyPad keyPad;
     private ArrayList<Coin> till;
+    private ArrayList<Coin> customerChange;
 
 
     public VendingMachine(CoinSlot coinSlot, KeyPad keyPad) {
@@ -18,6 +20,7 @@ public class VendingMachine {
         this.positions = new ArrayList<>();
         this.keyPad = keyPad;
         this.till = new ArrayList<>();
+        this.customerChange = new ArrayList<>();
         generatePositions();
         generateFloat();
 
@@ -95,71 +98,28 @@ public class VendingMachine {
         }
     }
 
+    public double checkCoins(double change, CoinType coinType) {
+        if (change >= coinType.getValue()) {
+            for (Coin coin : this.till) {
+                if (coin.getCoinType() == coinType) {
+                    this.till.remove(coin);
+                    change -= coinType.getValue();
+                    customerChange.add(coin);
+                    if (change < coinType.getValue()) break;
+                }
+            }
+
+        }return change;
+    }
 
     public void giveChange(double change, Customer customer) {
-        ArrayList<Coin> changeCoins = new ArrayList<>();
-        if (change >= 2.00) {
-            for (Coin coin : this.till) {
-                if (coin.getCoinType() == CoinType.TWOPOUND) {
-                    this.till.remove(coin);
-                    changeCoins.add(coin);
-                    change -= 2.00;
-                    if (change < 2.00) break;
-                }
-            }
-        }
-        if (change >= 1.00) {
-            for (Coin coin : this.till) {
-                if (coin.getCoinType() == CoinType.ONEPOUND) {
-                    this.till.remove(coin);
-                    changeCoins.add(coin);
-                    change -= 1.00;
-                    if (change < 1.00) break;
-                }
-            }
-        }
-        if (change >= 0.50) {
-            for (Coin coin : this.till) {
-                if (coin.getCoinType() == CoinType.FIFTYPENCE) {
-                    this.till.remove(coin);
-                    changeCoins.add(coin);
-                    change -= 0.50;
-                    if (change < 0.50) break;
-                }
-            }
-        }
-        if (change >= 0.20) {
-            for (Coin coin : this.till) {
-                if (coin.getCoinType() == CoinType.TWENTYPENCE) {
-                    this.till.remove(coin);
-                    changeCoins.add(coin);
-                    change -= 0.20;
-                    if (change < 0.20) break;
-                }
-            }
-        }
-        if (change >= 0.10) {
-            for (Coin coin : this.till) {
-                if (coin.getCoinType() == CoinType.TENPENCE) {
-                    this.till.remove(coin);
-                    changeCoins.add(coin);
-                    change -= 0.10;
-                    if (change < 0.10) break;
-                }
-            }
-        }
-        if (change >= 0.05) {
-            for (Coin coin : this.till) {
-                if (coin.getCoinType() == CoinType.FIVEPENCE) {
-                    this.till.remove(coin);
-                    changeCoins.add(coin);
-                    change -= 0.05;
-                    if (change < 0.05) break;
-                }
-            }
-        }
-        customer.addChangeToWallet(changeCoins);
-
+        change = checkCoins(change, CoinType.TWOPOUND);
+        change = checkCoins(change, CoinType.ONEPOUND);
+        change = checkCoins(change, CoinType.FIFTYPENCE);
+        change = checkCoins(change, CoinType.TWENTYPENCE);
+        change = checkCoins(change, CoinType.TENPENCE);
+        change = checkCoins(change, CoinType.FIVEPENCE);
+        customer.addChangeToWallet(customerChange);
     }
 
 
