@@ -1,5 +1,6 @@
-import machine.Selection;
+import machine.SelectionLetters;
 import machine.Button;
+import machine.SelectionNumbers;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,13 +10,13 @@ public class ButtonTest {
     Button button;
 
     @Before
-    public void setUp() throws Exception {
-        button = new Button(Selection.A1);
+    public void setUp() {
+        button = new Button(SelectionLetters.A, SelectionNumbers.FIVE);
     }
 
     @Test
     public void hasASelectionEnum() {
-        assertEquals(Selection.A1, button.getSelection());
+        assertEquals(SelectionLetters.A,  button.getSelectionletter());
     }
 
 

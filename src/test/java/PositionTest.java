@@ -1,5 +1,7 @@
+import machine.Button;
 import machine.Position;
-import machine.Selection;
+import machine.SelectionLetters;
+import machine.SelectionNumbers;
 import org.junit.Before;
 import org.junit.Test;
 import products.Product;
@@ -9,10 +11,12 @@ import static org.junit.Assert.assertEquals;
 
 public class PositionTest {
     Position position;
+    Button button;
 
     @Before
     public void setUp() throws Exception {
-        position = new Position(0.50, Selection.A1);
+        button = new Button(SelectionLetters.A, SelectionNumbers.FIVE);
+        position = new Position(0.50, button);
     }
 
     @Test

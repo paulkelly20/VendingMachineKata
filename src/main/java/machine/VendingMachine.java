@@ -33,9 +33,11 @@ public class VendingMachine {
     }
 
     private void generatePositions() {
-        for (Selection selection : Selection.values()) {
-            Position position = new Position(0, selection);
-            this.positions.add(position);
+        for (SelectionLetters selectionLetters : SelectionLetters.values()) {
+            for(SelectionNumbers selectionNumbers: SelectionNumbers.values()){
+                Button button = new Button(selectionLetters, selectionNumbers );
+            Position position = new Position(0,button );
+            this.positions.add(position);}
         }
     }
 

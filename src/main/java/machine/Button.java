@@ -1,13 +1,23 @@
 package machine;
 
 public class Button {
-    private Selection selection;
+    private SelectionLetters selectionletter;
+    private SelectionNumbers selectionNumbers;
 
-    public Button(Selection selection) {
-        this.selection = selection;
+    public Button(SelectionLetters selectionletter, SelectionNumbers selectionNumbers) {
+        this.selectionletter = selectionletter;
+        this.selectionNumbers = selectionNumbers;
     }
 
-    public Selection getSelection() {
-        return selection;
+    public SelectionLetters getSelectionletter() {
+        return selectionletter;
+    }
+
+    public SelectionNumbers getSelectionNumbers() {
+        return selectionNumbers;
+    }
+
+    public int getNumberFromSelectionNumbersEnum(){
+        return this.selectionNumbers.getNumber();
     }
 }

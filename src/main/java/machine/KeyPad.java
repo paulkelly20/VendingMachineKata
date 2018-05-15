@@ -11,9 +11,10 @@ public class KeyPad {
     }
 
     private void generateButtons() {
-        for (Selection selection : Selection.values()){
-            Button button = new Button(selection);
-            this.buttons.add(button);
+        for (SelectionLetters selectionLetters : SelectionLetters.values()){
+                for(SelectionNumbers selectionNumbers: SelectionNumbers.values()){
+            Button button = new Button(selectionLetters, selectionNumbers );
+            this.buttons.add(button);}
         }
     }
 
@@ -35,7 +36,7 @@ public class KeyPad {
 
     public String displayOutOfStock(Position position) {
         if(position.getStockLevel() < 1){
-            return String.format("%s out of stock", position.getSelection());
-        } else return String.format("%s in stock", position.getSelection());
+            return "Position is out of stock";
+        } else return "Position is in stock";
     }
 }

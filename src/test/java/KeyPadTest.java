@@ -1,9 +1,6 @@
 import coins.Coin;
 import coins.CoinType;
-import machine.CoinSlot;
-import machine.KeyPad;
-import machine.Position;
-import machine.Selection;
+import machine.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,7 +17,7 @@ public class KeyPadTest {
 
     @Test
     public void has16Buttons() {
-        assertEquals(16, keypad.getNumberOfButtons());
+        assertEquals(18, keypad.getNumberOfButtons());
     }
 
     @Test
@@ -34,14 +31,16 @@ public class KeyPadTest {
 
     @Test
     public void canDisplayPrice() {
-        Position position = new Position(0.50, Selection.A1);
+        Button button = new Button(SelectionLetters.A, SelectionNumbers.FIVE);
+        Position position = new Position(0.50, button);
         assertEquals("The price is 0.50", keypad.displayPrice(position));
     }
 
     @Test
     public void productSoldOut() {
-        Position position = new Position(0.50, Selection.A1);
-        assertEquals("A1 out of stock", keypad.displayOutOfStock(position));
+        Button button = new Button(SelectionLetters.A, SelectionNumbers.FIVE);
+        Position position = new Position(0.50, button);
+        assertEquals("Position is out of stock", keypad.displayOutOfStock(position));
     }
 
 

@@ -1,19 +1,18 @@
 package machine;
 
 import products.Product;
-import products.Sweet;
 
 import java.util.ArrayList;
 
 public class Position {
     private double price;
     private ArrayList<Product> products;
-    private Selection selection;
+    private Button button;
 
-    public Position(double price, Selection selection) {
+    public Position(double price, Button button) {
         this.price = price;
         this.products = new ArrayList<>();
-        this.selection = selection;
+        this.button = button;
     }
 
     public int getStockLevel() {
@@ -24,8 +23,8 @@ public class Position {
         return price;
     }
 
-    public Selection getSelection() {
-        return selection;
+    public Button getButton() {
+        return button;
     }
 
     public void setPrice(double price) {

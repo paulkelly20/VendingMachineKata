@@ -19,6 +19,7 @@ public class VendingMachineTest {
     Coin onePound;
     Coin fiftyPence;
     Customer customer;
+    Button button;
 
 
     @Before
@@ -28,7 +29,8 @@ public class VendingMachineTest {
         onePound = new Coin(CoinType.ONEPOUND);
         vendingMachine = new VendingMachine(coinSlot, keyPad);
         sweet = new Sweet("Mars", 0.50);
-        position = new Position(0.50, Selection.A1);
+        button = new Button(SelectionLetters.A, SelectionNumbers.FIVE);
+        position = new Position(0.50, button);
         onePound = new Coin(CoinType.ONEPOUND);
         fiftyPence = new Coin(CoinType.FIFTYPENCE);
         ArrayList<Coin> wallet = new ArrayList<>();
@@ -42,7 +44,7 @@ public class VendingMachineTest {
 
     @Test
     public void startsWith16Positions() {
-        assertEquals(16, vendingMachine.getNumberOfPositions());
+        assertEquals(18, vendingMachine.getNumberOfPositions());
     }
 
     @Test
