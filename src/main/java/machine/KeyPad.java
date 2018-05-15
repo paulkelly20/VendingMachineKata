@@ -39,4 +39,10 @@ public class KeyPad {
             return "Position is out of stock";
         } else return "Position is in stock";
     }
+
+    public String machineNeedsCorrectChange(VendingMachine vendingMachine) {
+       if(vendingMachine.enoughCoinsToGiveChange())
+       {return "Correct change only";}
+       else return null;
+    }
 }

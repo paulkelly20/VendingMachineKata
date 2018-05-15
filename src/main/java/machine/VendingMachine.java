@@ -159,6 +159,11 @@ public class VendingMachine {
         customer.addChangeToWallet(changeCoins);
     }
 
+    public boolean enoughCoinsToGiveChange(){
+        if (countNumberOfCoins() > 5) return true;
+        else return false;
+    }
+
 }
 
 

@@ -8,10 +8,16 @@ import static org.junit.Assert.assertEquals;
 
 public class KeyPadTest {
     KeyPad keypad;
+    VendingMachine vendingMachine;
+    CoinSlot coinSlot;
 
     @Before
     public void setUp() throws Exception {
+
+        coinSlot = new CoinSlot();
         keypad = new KeyPad();
+        vendingMachine = new VendingMachine(coinSlot, keypad);
+
 
     }
 
@@ -43,5 +49,8 @@ public class KeyPadTest {
         assertEquals("Position is out of stock", keypad.displayOutOfStock(position));
     }
 
-
+    @Test
+    public void displayCorrectChangeOnly() {
+        assertEquals("Correct change only", keypad.machineNeedsCorrectChange(vendingMachine));
+    }
 }
