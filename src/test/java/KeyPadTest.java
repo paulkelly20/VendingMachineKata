@@ -12,7 +12,7 @@ public class KeyPadTest {
     CoinSlot coinSlot;
 
     @Before
-    public void setUp() throws Exception {
+    public void before() {
 
         coinSlot = new CoinSlot();
         keypad = new KeyPad();

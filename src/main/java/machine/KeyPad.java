@@ -41,7 +41,7 @@ public class KeyPad {
     }
 
     public String machineNeedsCorrectChange(VendingMachine vendingMachine) {
-       if(vendingMachine.enoughCoinsToGiveChange())
+       if(vendingMachine.EnoughCoinsToGiveChange())
        {return "Correct change only";}
        else return null;
     }

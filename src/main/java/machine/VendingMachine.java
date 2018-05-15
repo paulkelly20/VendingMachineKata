@@ -34,10 +34,11 @@ public class VendingMachine {
 
     private void generatePositions() {
         for (SelectionLetters selectionLetters : SelectionLetters.values()) {
-            for(SelectionNumbers selectionNumbers: SelectionNumbers.values()){
-                Button button = new Button(selectionLetters, selectionNumbers );
-            Position position = new Position(0,button );
-            this.positions.add(position);}
+            for (SelectionNumbers selectionNumbers : SelectionNumbers.values()) {
+                Button button = new Button(selectionLetters, selectionNumbers);
+                Position position = new Position(0, button);
+                this.positions.add(position);
+            }
         }
     }
 
@@ -83,9 +84,9 @@ public class VendingMachine {
     }
 
 
-    public void sellProduct(Position position, Customer customer){
+    public void sellProduct(Position position, Customer customer) {
         double temporaryBalance = coinSlot.getCurrentBalance();
-        if (coinslotBalanceEnoughToBuyProuct(position)){
+        if (coinslotBalanceEnoughToBuyProuct(position)) {
             addMulitpleCoinsToTill(coinSlot.coinSlotReleasesAllCoins());
             position.dispenseProduct();
             keyPad.thankYou();
@@ -97,7 +98,7 @@ public class VendingMachine {
 
     public void giveChange(double change, Customer customer) {
         ArrayList<Coin> changeCoins = new ArrayList<>();
-        if(change >= 2.00) {
+        if (change >= 2.00) {
             for (Coin coin : this.till) {
                 if (coin.getCoinType() == CoinType.TWOPOUND) {
                     this.till.remove(coin);
@@ -107,7 +108,7 @@ public class VendingMachine {
                 }
             }
         }
-        if(change >= 1.00) {
+        if (change >= 1.00) {
             for (Coin coin : this.till) {
                 if (coin.getCoinType() == CoinType.ONEPOUND) {
                     this.till.remove(coin);
@@ -117,7 +118,7 @@ public class VendingMachine {
                 }
             }
         }
-        if(change >= 0.50) {
+        if (change >= 0.50) {
             for (Coin coin : this.till) {
                 if (coin.getCoinType() == CoinType.FIFTYPENCE) {
                     this.till.remove(coin);
@@ -127,7 +128,7 @@ public class VendingMachine {
                 }
             }
         }
-        if(change >= 0.20) {
+        if (change >= 0.20) {
             for (Coin coin : this.till) {
                 if (coin.getCoinType() == CoinType.TWENTYPENCE) {
                     this.till.remove(coin);
@@ -137,7 +138,7 @@ public class VendingMachine {
                 }
             }
         }
-        if(change >= 0.10) {
+        if (change >= 0.10) {
             for (Coin coin : this.till) {
                 if (coin.getCoinType() == CoinType.TENPENCE) {
                     this.till.remove(coin);
@@ -146,7 +147,8 @@ public class VendingMachine {
                     if (change < 0.10) break;
                 }
             }
-        }   if(change >= 0.05) {
+        }
+        if (change >= 0.05) {
             for (Coin coin : this.till) {
                 if (coin.getCoinType() == CoinType.FIVEPENCE) {
                     this.till.remove(coin);
@@ -157,14 +159,62 @@ public class VendingMachine {
             }
         }
         customer.addChangeToWallet(changeCoins);
+
     }
 
-    public boolean enoughCoinsToGiveChange(){
-        if (countNumberOfCoins() > 5) return true;
-        else return false;
-    }
 
+    public Boolean EnoughCoinsToGiveChange() {
+        int twoPound = 0;
+        int onePound = 0;
+        int fiftyPence = 0;
+        int twentyPence = 0;
+        int tenPence = 0;
+        int fivePence = 0;
+        for (Coin coin : this.till) {
+            if (coin.getCoinType() == CoinType.TWOPOUND) {
+                twoPound++;
+            }
+        }
+
+
+        for (Coin coin : this.till) {
+            if (coin.getCoinType() == CoinType.ONEPOUND) {
+                onePound++;
+            }
+        }
+
+        {
+            for (Coin coin : this.till) {
+                if (coin.getCoinType() == CoinType.FIFTYPENCE) {
+                    fiftyPence++;
+                }
+            }
+
+
+            for (Coin coin : this.till) {
+                if (coin.getCoinType() == CoinType.TWENTYPENCE) {
+                    twentyPence++;
+                }
+            }
+        }
+
+        for (Coin coin : this.till) {
+            if (coin.getCoinType() == CoinType.TENPENCE) {
+                tenPence++;
+            }
+        }
+
+        for (Coin coin : this.till) {
+            if (coin.getCoinType() == CoinType.FIVEPENCE) {
+                fivePence++;
+            }
+        } if(twoPound < 2 || onePound < 2 || fiftyPence < 2 || twentyPence < 2 || tenPence < 2 || fivePence < 2){
+            return false;
+        } return true;
+    }
 }
+
+
 
 
 
