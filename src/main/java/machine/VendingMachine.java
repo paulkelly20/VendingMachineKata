@@ -209,8 +209,12 @@ public class VendingMachine {
                 fivePence++;
             }
         } if(twoPound < 2 || onePound < 2 || fiftyPence < 2 || twentyPence < 2 || tenPence < 2 || fivePence < 2){
-            return false;
-        } return true;
+            return true;
+        } return false;
+    }
+
+    public void emptyTill() {
+        this.till.clear();
     }
 }
 

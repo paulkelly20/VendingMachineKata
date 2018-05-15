@@ -1,8 +1,11 @@
 import coins.Coin;
 import coins.CoinType;
+import customer.Customer;
 import machine.*;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,14 +13,21 @@ public class KeyPadTest {
     KeyPad keypad;
     VendingMachine vendingMachine;
     CoinSlot coinSlot;
+    Customer customer;
+    Coin onePound;
+    Coin fiftyPence;
 
     @Before
-    public void before() {
-
-        coinSlot = new CoinSlot();
-        keypad = new KeyPad();
-        vendingMachine = new VendingMachine(coinSlot, keypad);
-
+    public void before(){
+    coinSlot = new CoinSlot();
+    keypad = new KeyPad();
+    vendingMachine = new VendingMachine(coinSlot, keypad);
+    onePound = new Coin(CoinType.ONEPOUND);
+    fiftyPence = new Coin(CoinType.FIFTYPENCE);
+    ArrayList<Coin> wallet = new ArrayList<>();
+    wallet.add(onePound);
+    wallet.add(fiftyPence);
+    customer = new Customer("Paul",wallet );
 
     }
 
@@ -50,7 +60,18 @@ public class KeyPadTest {
     }
 
     @Test
+    public void displayCorrectCanGiveChange() {
+        assertEquals("Can give change", keypad.machineNeedsCorrectChange(vendingMachine));
+    }
+
+    @Test
     public void displayCorrectChangeOnly() {
+        vendingMachine.emptyTill();
         assertEquals("Correct change only", keypad.machineNeedsCorrectChange(vendingMachine));
+    }
+
+    @Test
+    public void countCoinsInVendingMachine() {
+        assertEquals(30, vendingMachine.countNumberOfCoins());
     }
 }

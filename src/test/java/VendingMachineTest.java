@@ -43,7 +43,7 @@ public class VendingMachineTest {
     }
 
     @Test
-    public void startsWith16Positions() {
+    public void startsWith18Positions() {
         assertEquals(18, vendingMachine.getNumberOfPositions());
     }
 
