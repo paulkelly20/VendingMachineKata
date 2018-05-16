@@ -7,13 +7,13 @@ public class KeyPad {
 
     public KeyPad() {
         this.buttons = new ArrayList<>();
-        generateButtons();
+        generateButtons(3);
     }
 
-    private void generateButtons() {
-        for (SelectionLetters selectionLetters : SelectionLetters.values()){
-                for(SelectionNumbers selectionNumbers: SelectionNumbers.values()){
-            Button button = new Button(selectionLetters, selectionNumbers );
+    private void generateButtons(int numberOfRows) {
+        for (int i = 0; i < numberOfRows; i++) {
+            for (int y = 0; y < 9; y++) {
+                Button button = new Button(SelectionLetters.values()[i], SelectionNumbers.values()[y]);
             this.buttons.add(button);}
         }
     }

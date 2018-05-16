@@ -3,7 +3,6 @@ package machine;
 import coins.Coin;
 import coins.CoinType;
 import customer.Customer;
-import products.Product;
 
 import java.util.ArrayList;
 
@@ -21,7 +20,7 @@ public class VendingMachine {
         this.keyPad = keyPad;
         this.till = new ArrayList<>();
         this.customerChange = new ArrayList<>();
-        generatePositions();
+        generatePositions(3);
         generateFloat();
 
     }
@@ -35,10 +34,10 @@ public class VendingMachine {
         return till.size();
     }
 
-    private void generatePositions() {
-        for (SelectionLetters selectionLetters : SelectionLetters.values()) {
-            for (SelectionNumbers selectionNumbers : SelectionNumbers.values()) {
-                Button button = new Button(selectionLetters, selectionNumbers);
+    private void generatePositions(int numberOfRows) {
+        for (int i = 0; i < numberOfRows; i++) {
+            for (int y = 0; y < 9; y++) {
+                Button button = new Button(SelectionLetters.values()[i], SelectionNumbers.values()[y]);
                 Position position = new Position(0, button);
                 this.positions.add(position);
             }
